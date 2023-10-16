@@ -1,156 +1,187 @@
-<html> 
-<head> 
-<style> 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
+<!DOCTYPE html>
+<html>
 
-html {
-  box-sizing: border-box;
-}
+<head>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color:rgb(231, 220, 209) ;
+        }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+        .navbar {
+            background-color: hwb(0 51% 31%);
+            /* Background color of the navbar */
+            overflow: hidden;
+            height: 80px;
+            position: fixed;
+            width: 100%;
 
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
+        }
 
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
+        /* Style for the navigation bar links */
+        .navbar a {
+            float: left;
+            /* Float the links to the left */
+            display: block;
+            color: white;
+            /* Text color of the links */
+            text-align: center;
+            width: 100px;
+            font-size: 25px;
+            margin-top: 18px;
+            padding: 14px 16px;
+            /* Padding around each link */
+            text-decoration: none;
+            /* Remove underlines from links */
+            border: none;
+            /* Remove the default button border */
+            cursor: pointer;
+            /* Change the cursor on hover to indicate interactivity */
+        }
 
-.container {
-  padding: 0 16px;
-}
+        .navbar a:hover {
+            background-color: black;
+            /* Background color on hover */
+            /* color:  white;  Text color on hover */
+        }
+        
+        
+        
+        img {
+            border: solid black;
+            border-radius: 55px;
+            align-items: center;
+            /* Creates a circular shape */
+           
+            height: 150px;
+            width: 150px;
+        }
+        
+        .left-section {
+            /* left: 40px; */
+            display: flex;
+            position: fixed;
+            align-items: center;
+            top: 15vh;
+            margin-left: 50px;
+            width: 40%;
+            /* padding: 30px ; */
+            /* align-items: left; */
+            background-color: #f2f2f2;
+            /* padding: 20px;  */
+            height: 30vh;
+        }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+        .left-section img{
+            margin: 30px;
+        }
+        /* .h1{
+            display: inline;
+            height: 80vh;
+      } */
 
-.title {
-  color: grey;
-}
+        /* Style for the right section */
+        .right-section {
+            /* display: inline; */
+            top: 400px;
+            width: 40%;
+            position: fixed;
+            /* top: 20px; */
+            right: 50px;
+            /* align-items: right; */
+            /* float: right; */
+            background-color: #f2f2f2;
+            padding: 20px;
+            /* padding-left: 50px;  */
+            height: 25vh;
+        }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
+        .rita{
+            position: fixed;
+            top: 15vh;
+            left: 60vw;
+            height: 30vh;
+            right: 60px;
+        }
 
-.button:hover {
-  background-color: #555;
-}
+        .devansh{
+            position: fixed;
+            width: 40vw;
+             top: 55vh;
+            left:5vw;
+            /* height: 400vh; */
+        }
+      
+        
+        .puppy {
+            background-image: url('puppy1.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 400px;
+            height: 300px;
+        }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
- 
-}
-.new {
-padding-righgt:500px;
-}
-img{
-border:solid black;
-</style> 
-</head> 
-<body> 
+        .lower{
+            position: fixed;
+            bottom: 15px;
+            background-color: antiquewhite;
+            width: 100%;
+            text-align: center;
+        }
+        
+    </style>
+</head>
 
-<div class="about-section">
-  <h1>Contact  Us Page</h1>
-  <p>Know more about the members of Paw Print Chronicles.</p>
-  
-</div>
+<body>
+    <scetion id="nav"></scetion>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about us.html">About</a>
+        <a href="terms and conditions 2.html">Services</a>
 
-<h2 style="text-align:center">Our Team</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="aanchal1.jpg" alt="aanchal" height="500px" width="300px" >
-      <div class="container">
-        <h2>AANCHAL KAILEY </h2>
-        <p class="title">STUDENT </p>
-        <p>working in PPC since December .</p>
-        <p>aanchalkailey656@gmail.com</p>
-        <p>Contact:8837869635</p>
-      </div>
     </div>
-  </div>
+    </scetion>
 
-  <div class="column">
-    <div class="card">
-      <img src="bhambra.jpg" alt="bhambra" height="500px" width="300px">
-      <div class="container">
-        <h2>HARVIN </h2>
-        <p class="title">STUDENT </p>
-        <p>working in PPC since january  </p>
-        <p>harvinbhambra06@gmail.com</p>
-        <p>Contact:8872461211</p>
-      </div>
+    <div class="middle">
+        <div class="left-section">
+            <img src="reeta photo.jpg" alt="" height="500px" width="300px">
+        </div>
+        <div class="rita">
+            <h1>  Reeta </h1>
+             <h2> Graduate </h2>
+             <h2> ritathakur9154@gmail.com</h2>
+             <h2>
+                6284210320
+             </h2>
+        </div>
+
+
+        <div class="devansh">
+            <h1>  Devansh</h1>
+             <h2> Graduate </h2>
+             <h2> deavansh11@gmail.com</h2>
+             <h2>
+                6284210320
+             </h2>
+        </div>
+        <div class="right-section">
+            <img src="devansh.jpg" alt="" height="700px" width="300px">
+        </div>
+
+
+        <div class="clear"></div>
+
     </div>
-  </div>
-<br> 
-  <div class="column">
-    <div class="card">
-      <img src="maneesh.jpg" alt="Maneesh" height="500px" width="300px">
-      <div class="container">
-        <h2>MANEESH AMOLI </h2>
-        <p class="title">STUDENT </p>
-        <p>working in PPC since March </p>
-        <p>amoli98@gmail.com</p>
-        <p>Contact:7696965823</p>
-      </div>
+
+    <section id="lower ">
+        <div class="lower"> 
+        <p> Lower Element </p>
     </div>
-  </div>
-  <div class="new" > 
-    <div class="column">
-    <div class="card">
-      <img src="reetaphoto__.jpg" alt="REETA" height="500px" width="300px" >
-      <div class="container">
-        <h2>REETA DEVI  </h2>
-        <p class="title">STUDENT </p>
-        <p>working in PPC since December.</p>
-        <p>ritathakur9154@gmail.com</p>
-        <p>Contact:6284210320</p>
-      </div>
-    </div>
-  </div>
-  </div> 
-  <div class="column">
-    <div class="card">
-      <img src="marck.jpg" alt="John" height="500px" width="300px">
-      <div class="container">
-        <h2>MARCK  </h2>
-        <p class="title">DEVELOPER </p>
-        <p>working in PPC since November </p>
-        <p>marck_98@gmail.com</p>
-        <p>Contact:6754237891</p>
-      </div>
-    </div>
-  </div>
-</div>
-</body> 
+</section >
+
+
+</body>
+
 </html>
